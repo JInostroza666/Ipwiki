@@ -68,7 +68,7 @@ export class DialogComponent implements OnInit {
   editEmpleado() {
     this.empleadoSvc.editEmpleado(this.empleadoForm.value).subscribe({
       next:(res) => {
-        alert('Empleado editado')
+        alert('Accion exitosa')
       }
     })
   }
