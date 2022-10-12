@@ -9,6 +9,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -24,7 +26,9 @@ const MATERIAL_MODULES = [
   MatIconModule,
   MatInputModule,
   MatFormFieldModule,
-  MatListModule
+  MatListModule,
+  MatPaginatorModule,
+  MatTableModule
 
  ];
 

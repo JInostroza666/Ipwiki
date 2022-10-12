@@ -10,6 +10,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { AuthInterceptorProvider } from './auth/interceptors/cookies.interceptor';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 
 
@@ -19,14 +25,20 @@ import { AuthInterceptorProvider } from './auth/interceptors/cookies.interceptor
     ArticlesComponent,
     //SearchComponent
     FooterComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    DialogComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]

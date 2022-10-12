@@ -1,0 +1,73 @@
+<h1 mat-dialog-title>Empleado</h1>
+<div mat-dialog-content>
+    <form [formGroup]="empleadoForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Rut</mat-label>
+            <input formControlName="Rut_Empleado" matInput placeholder="Rut">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Codigo Comuna</mat-label>
+            <input formControlName="Codigo_Comuna" matInput placeholder="Comuna">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Codigo Sucursal</mat-label>
+            <input formControlName="Codigo_Sucursal" matInput placeholder="Sucursal">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Nombres</mat-label>
+            <input formControlName="Nombres" matInput placeholder="Nombres">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Apellido Paterno</mat-label>
+            <input formControlName="Apellido_Paterno" matInput placeholder="Apellido Paterno">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Apellido Materno</mat-label>
+            <input formControlName="Apellido_Materno" matInput placeholder="Apellido Materno">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Telefono</mat-label>
+            <input formControlName="Telefono_Empleado" matInput placeholder="Telefono">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Cargo</mat-label>
+            <input formControlName="Cargo" matInput placeholder="Cargo">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input formControlName="Email_Empleado" matInput placeholder="Email">
+          </mat-form-field>
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Direccion</mat-label>
+            <input formControlName="Direccion_Empleado" matInput placeholder="Direccion">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Estado</mat-label>
+            <input formControlName="Estado" matInput placeholder="Estado">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Clave</mat-label>
+            <input formControlName="Clave" matInput placeholder="Clave">
+          </mat-form-field>
+    
+          <mat-form-field appearance="outline">
+            <mat-label>Privilegio</mat-label>
+            <input formControlName="Privilegio" matInput placeholder="Privilegio">
+          </mat-form-field>
+    </form>
+      <div mat-dialog-action [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+        <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="createEmpleado()">{{actionBtn}}</button>
+      </div>
+</div>

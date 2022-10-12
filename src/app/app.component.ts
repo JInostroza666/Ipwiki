@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { ArticlesI } from './interface/wiki';
 import { SearchWikiService } from './service/search-wiki.service';
@@ -13,7 +14,8 @@ export class AppComponent {
   title = 'apiWiki';
 
   constructor(
-    private searchSvc: SearchWikiService
+    private searchSvc: SearchWikiService,
+    private dialog: MatDialog
   ){}
 
   onSearch(search: string){
